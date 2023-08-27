@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perfumes",
+  "info": {
+    "singularName": "perfume",
+    "pluralName": "perfumes",
+    "displayName": "Perfume",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Price": {
+      "type": "float",
+      "required": true
+    },
+    "perfumeid": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "ImageUrl": {
+      "type": "string"
+    },
+    "Pricemultiplier": {
+      "type": "float"
+    },
+    "Brand": {
+      "type": "string"
+    },
+    "Aroma": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "integer"
+    }
+  }
+}
